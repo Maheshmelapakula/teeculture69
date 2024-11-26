@@ -37,7 +37,7 @@ const Navbar = () => {
         {/* Logo with Text Below */}
         <div className="flex items-center gap-2">
           <img
-            src="/teelogo.png" // Path to your logo image
+            src="/teeLogo.png" // Path to your logo image
             alt="TeeCulture69 Logo"
             className="h-10 w-15" // Adjust size of the logo
           />
