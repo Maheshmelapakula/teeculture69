@@ -1,0 +1,76 @@
+/* Fullscreen Container */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  /* Background Images Styling */
+  .background-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    animation: scrollBackground 30s linear infinite;
+  }
+  
+  .background-image {
+    object-fit: cover;
+    width: 33.33%; /* Each image will take up 1/3 of the width */
+    height: 100%;
+    object-position: center;
+  }
+  
+  /* Scroll Animation */
+  /* @keyframes scrollBackground {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
+  
+  /* Background Overlay for Darkening */
+  .hero-container .bg-black {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  /* Hero Text Styling */
+  .hero-container h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-container p {
+    color: #ffffff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Button Styling */
+  .hero-container a {
+    text-decoration: none;
+    background-color: #ff7f50; /* Orange color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-container a:hover {
+    background-color: #ff4500; /* Darker orange for hover effect */
+  }
+  
